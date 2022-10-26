@@ -83,18 +83,18 @@ int listarTrabajos(eTrabajo listaTrabajos[],eServicio listaServicios[],int tamTr
 /// @return Retorna 0 si tod OK o -1 en caso de error generico(NULL en los punteros).
 int obtenerDescServicio(eServicio listaServicio[], int tamServicio, char*resultado,int id);
 
-/// @brief
+/// @brief Funcion que busca el nombre correspondiente al id del cliente
 ///
 /// @param listaClientes
 /// @param tamClientes
-/// @param resultado
-/// @param id
-/// @return
+/// @param resultado Puntero a variable donde se guardara el nombre del cliente.
+/// @param id ID del cliente el cual se desea saber el nombre.
+/// @return retorna 0 si OK o -1 en caso de error.
 int obtenerNombreCliente(eCliente listaClientes[],int tamClientes,char*resultado,int id);
 
-/// @brief
+/// @brief Funcion que imprime a los clientes en formato tabla.
 ///
-/// @param listaClientes
-/// @param tamClientes
-/// @return
+/// @param listaClientes array de clientes.
+/// @param tamClientes tamanio del aray.
+/// @return Retorna 0 si todo OK o -1 si hay error.
 int imprimirClientes(eCliente listaClientes[],int tamClientes);
